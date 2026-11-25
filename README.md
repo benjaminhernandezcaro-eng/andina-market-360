@@ -27,3 +27,5 @@ Proposito: Consolidar reportes comerciales de Lima, Ica y Arequipa.
 Ejecucion directa: `python src/resumen.py`
 
 El informe muestra ventas consolidadas por cada sede: Lima, Ica y Arequipa.
+
+Fuente de datos: archivo CSV ficticio de 12 ventas.
