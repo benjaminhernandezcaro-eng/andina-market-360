@@ -22,3 +22,5 @@ Abrir `http://localhost:8000` mientras se ejecuta el servidor. Detener con Ctrl+
 
 ## Uso responsable
 El proyecto es exclusivamente didáctico. No almacenar contraseñas, tokens, correos personales ni ventas reales. No se conecta automáticamente a servicios externos.
+
+Proposito: Consolidar reportes comerciales de Lima, Ica y Arequipa.
