@@ -1,0 +1,5 @@
+{
+  "name": "Andina Market Python",
+  "image": "mcr.microsoft.com/devcontainers/python:3",
+  "postCreateCommand": "python -m unittest discover -s tests -v"
+}
