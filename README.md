@@ -1,31 +1,28 @@
 # Andina Market 360
 
-Caso ficticio único del **Cuaderno de prácticas Git y GitHub (36 capítulos)**.
+Caso practico del Cuaderno de Git y GitHub (36 capitulos).
 
 ## Objetivo
-Convertir un CSV de ventas **simuladas** en un resumen verificable por sede y una página web estática. Nunca incorporar datos reales de personas.
+Consolidar ventas ficticias de Lima, Ica y Arequipa en un resumen JSON y un tablero web estatico sin datos reales.
 
-## Carpetas
-- `data/ventas.csv`: 12 transacciones ficticias.
-- `src/resumen.py`: procesamiento con Python sin librerías de terceros.
-- `tests/test_resumen.py`: pruebas unitarias locales.
-- `docs/`: sitio estático preparado para GitHub Pages.
-- `.github/workflows/ci.yml`: ejemplo de ejecución automática de pruebas.
+## Requisitos y Datos
+- Python 3 estándar (sin dependencias externas)
+- Git
+- Fuente de datos ficticios: [data/ventas.csv](data/ventas.csv)
+- Manual detallado: [Manual](docs/manual.md) | [Guia de contribucion](CONTRIBUTING.md)
 
-## Prueba local
+## Tabla de Indicadores (Ejemplo generado por Python)
+| Sede | Indicador | Formula | Fuente |
+|---|---|---|---|
+| Lima | Total ventas | Suma(total) | data/ventas.csv |
+| Ica | Total ventas | Suma(total) | data/ventas.csv |
+| Arequipa | Total ventas | Suma(total) | data/ventas.csv |
+
+*Nota: Los valores reales se calculan automaticamente; no deben tomarse como cifras reales de negocio.*
+
+## Inicio rapido
 ```bash
 python -m unittest discover -s tests -v
 python src/resumen.py --json docs/data/resumen.json
 python -m http.server 8000 --directory docs
 ```
-Abrir `http://localhost:8000` mientras se ejecuta el servidor. Detener con Ctrl+C.
-
-## Uso responsable
-El proyecto es exclusivamente didáctico. No almacenar contraseñas, tokens, correos personales ni ventas reales. No se conecta automáticamente a servicios externos.
-
-Proposito: Consolidar reportes comerciales de Lima, Ica y Arequipa.
-Ejecucion directa: `python src/resumen.py`
-
-El informe muestra ventas consolidadas por cada sede: Lima, Ica y Arequipa.
-
-Fuente de datos: archivo CSV ficticio de 12 ventas.
