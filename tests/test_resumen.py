@@ -39,5 +39,10 @@ class TestResumenVentas(unittest.TestCase):
         self.assertEqual(self.resumen["operaciones_por_sede"]["Lima"], 4)
         self.assertEqual(self.resumen["totales_por_sede"]["Lima"], 814.00)
 
+    def test_recuento_transacciones_por_sede(self):
+        """Reto 22.1: Verificar suma de transacciones por sede == 12"""
+        total_ops = sum(self.resumen["operaciones_por_sede"].values())
+        self.assertEqual(total_ops, 12)
+
 if __name__ == "__main__":
     unittest.main()
