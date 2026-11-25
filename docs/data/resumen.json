@@ -1,0 +1,16 @@
+{
+  "empresa": "Andina Market 360",
+  "tipo_datos": "Ficticios",
+  "total_operaciones": 12,
+  "total_general": 1845.0,
+  "totales_por_sede": {
+    "Arequipa": 476.0,
+    "Ica": 555.0,
+    "Lima": 814.0
+  },
+  "operaciones_por_sede": {
+    "Arequipa": 4,
+    "Ica": 4,
+    "Lima": 4
+  }
+}

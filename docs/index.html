@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Andina Market 360 - Dashboard de Ventas</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Andina Market 360</h1>
+    <p class="subtitle">Tablero de Control Comercial - Sedes Lima, Ica y Arequipa (Datos Ficticios Didácticos)</p>
+  </header>
+
+  <main>
+    <section class="kpi-container">
+      <div class="card kpi-card">
+        <h3>Total Ventas</h3>
+        <p class="kpi-value" id="total-ventas">S/ 1,845.00</p>
+        <span class="badge">Consolidado</span>
+      </div>
+      <div class="card kpi-card">
+        <h3>Operaciones</h3>
+        <p class="kpi-value" id="total-operaciones">12</p>
+        <span class="badge">Transacciones</span>
+      </div>
+      <div class="card kpi-card">
+        <h3>Sedes Activas</h3>
+        <p class="kpi-value">3</p>
+        <span class="badge">Nacional</span>
+      </div>
+    </section>
+
+    <section class="sedes-section">
+      <h2>Ventas por Sede Regional</h2>
+      <table class="tabla-sedes">
+        <thead>
+          <tr>
+            <th>Sede</th>
+            <th>Monto Total (PEN)</th>
+            <th>N° Operaciones</th>
+            <th>Participación</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Lima</strong></td>
+            <td>S/ 814.00</td>
+            <td>4</td>
+            <td>44.12%</td>
+          </tr>
+          <tr>
+            <td><strong>Ica</strong></td>
+            <td>S/ 555.00</td>
+            <td>4</td>
+            <td>30.08%</td>
+          </tr>
+          <tr>
+            <td><strong>Arequipa</strong></td>
+            <td>S/ 476.00</td>
+            <td>4</td>
+            <td>25.80%</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section class="datos-meta">
+      <p>Origen de datos: Generado automáticamente vía <code>src/resumen.py</code> a partir de <code>data/ventas.csv</code>.</p>
+      <p><a href="./data/resumen.json" target="_blank">Ver archivo JSON consolidado</a></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Andina Market 360 - Proyecto Académico de Prácticas Git y GitHub</p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,25 @@
+# Python y entornos virtuales
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+ENV/
+
+# Variables de entorno y secretos
+.env
+.env.local
+*.pem
+*.key
+
+# Archivos temporales y de compilacion
+*.tmp
+dist/
+build/
+*.egg-info/
+
+# Archivos de sistema y editores
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

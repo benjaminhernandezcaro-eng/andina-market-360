@@ -1,0 +1,13 @@
+id_venta,fecha,sede,categoria,producto,precio_unitario,cantidad,total
+V001,2026-03-01,Lima,Abarrotes,Arroz Extra 5kg,32.00,4,128.00
+V002,2026-03-02,Lima,Bebidas,Cafe Organico 250g,26.00,5,130.00
+V003,2026-03-05,Lima,Lacteos,Queso Andino Tradicional,38.00,6,228.00
+V004,2026-03-08,Lima,Abarrotes,Aceite de Oliva 1L,41.00,8,328.00
+V005,2026-03-02,Ica,Frutas,Uva Red Globe Caja,45.00,3,135.00
+V006,2026-03-04,Ica,Bebidas,Pisco Quebranta 750ml,65.00,2,130.00
+V007,2026-03-07,Ica,Abarrotes,Pecanas Seleccionadas 500g,35.00,4,140.00
+V008,2026-03-09,Ica,Lacteos,Mantequilla Artesanal,30.00,5,150.00
+V009,2026-03-03,Arequipa,Lacteos,Queso Paria 1kg,34.00,4,136.00
+V010,2026-03-06,Arequipa,Abarrotes,Quinua Real 1kg,18.00,5,90.00
+V011,2026-03-08,Arequipa,Bebidas,Anis Najajar 750ml,25.00,4,100.00
+V012,2026-03-10,Arequipa,Golosinas,Chocolates La Iberica,30.00,5,150.00
