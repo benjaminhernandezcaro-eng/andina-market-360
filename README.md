@@ -26,4 +26,4 @@ El proyecto es exclusivamente didáctico. No almacenar contraseñas, tokens, cor
 Proposito: Consolidar reportes comerciales de Lima, Ica y Arequipa.
 Ejecucion directa: `python src/resumen.py`
 
-El informe muestra ventas consolidadas por sede: Lima, Ica y Arequipa.
+El informe muestra ventas consolidadas por cada sede: Lima, Ica y Arequipa.
