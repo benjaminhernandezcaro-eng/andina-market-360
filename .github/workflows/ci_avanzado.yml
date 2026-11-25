@@ -1,0 +1,25 @@
+name: Pruebas Manuales y Programadas
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '30 8 * * 1' # Lunes 08:30 UTC (03:30 Peru)
+permissions:
+  contents: read
+jobs:
+  matriz:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: ['3.11', '3.12']
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+      - run: python -m unittest discover -s tests -v
+      - run: python src/resumen.py --json resumen_ci.json
+      - uses: actions/upload-artifact@v4
+        with:
+          name: resumen-ventas-${{ matrix.python-version }}
+          path: resumen_ci.json
+          retention-days: 7
