@@ -34,5 +34,10 @@ class TestResumenVentas(unittest.TestCase):
         self.assertEqual(totales["Ica"], 555.00)
         self.assertEqual(totales["Arequipa"], 476.00)
 
+    def test_lima_operaciones_y_total(self):
+        """Verificar conteo y total especifico para la sede Lima (4 ops, S/ 814.00)"""
+        self.assertEqual(self.resumen["operaciones_por_sede"]["Lima"], 4)
+        self.assertEqual(self.resumen["totales_por_sede"]["Lima"], 814.00)
+
 if __name__ == "__main__":
     unittest.main()
