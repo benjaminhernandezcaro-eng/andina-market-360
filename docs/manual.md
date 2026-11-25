@@ -5,3 +5,5 @@
 3. Revisar resultados en `docs/index.html` mediante servidor local.
 
 4. Verificar en http://localhost:8000 y detener con Ctrl+C.
+
+5. Validacion en GitHub Pages: verificar que los datos coincidan con el CSV.
