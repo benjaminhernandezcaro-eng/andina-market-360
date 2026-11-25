@@ -35,3 +35,5 @@ Justificacion: docs/data/resumen.json es generado por Python para evitar edicion
 | Totales por sede | Lima 814, Ica 555, Arequipa 476 | Script Python | docs/data/resumen.json |
 | Pruebas automaticas | 4/4 pruebas OK | Revisor | python -m unittest discover -s tests -v |
 | Tablero web | Visualizacion local sin errores | Web | http://localhost:8000 |
+
+Pregunta gerencia: Como evoluciona el margen por sede?
